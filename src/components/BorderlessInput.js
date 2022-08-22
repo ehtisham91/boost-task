@@ -1,24 +1,24 @@
-import * as React from 'react';
-import Input from '@mui/material/Input';
+import React from "react";
 
-export default function BorderlessInput({title, id, onChange, text, width}) {
+import Input from "@mui/material/Input";
 
-    const onValueChange = (e) => {
-        let value = e.target.value;
-        onChange(value);
-    }
-    
-    return (
-        <Input
-            id={id}
-            sx={{
-                width: width || '100%'
-            }}
-            placeholder={title}
-            defaultText={text}
-            variant="standard"
-            onChange={onValueChange}
-            disableUnderline={true}
+export default function BorderlessInput({ title, id, onChange, text, width }) {
+  const onValueChange = (e) => {
+    let value = e.target.value;
+    onChange(value);
+  };
+
+  return (
+    <Input
+      id={id}
+      sx={{
+        width: width || "100%",
+      }}
+      placeholder={title}
+      defaultText={text}
+      variant="standard"
+      onChange={onValueChange}
+      disableUnderline={true}
     />
-    );
+  );
 }

@@ -1,8 +1,10 @@
 import * as React from "react";
+
 import Container from "@mui/material/Container";
-import Board from "../../components/Board";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
+
+import Board from "../../components/Board";
 import { ViewCard } from "../../components/ViewCard";
 import LinearIndeterminate from "../../components/LoadingScreen";
 
@@ -39,7 +41,7 @@ export default function Home() {
         </Grid>
       </Box>
       <Box
-        mt={5}
+        py={5}
         sx={{ display: "flex", justifyContent: "center", width: "100%" }}
       >
         <Board />

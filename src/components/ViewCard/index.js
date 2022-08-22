@@ -1,3 +1,5 @@
+import React from "react";
+
 import {
   Box,
   Card,
@@ -8,6 +10,7 @@ import {
 } from "@mui/material";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import ShowChartIcon from "@mui/icons-material/ShowChart";
+
 import Styles from "./styles";
 
 export const ViewCard = ({ title, subtitle }) => {
