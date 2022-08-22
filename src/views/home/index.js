@@ -6,7 +6,7 @@ import Grid from "@mui/material/Grid";
 
 import Board from "../../components/Board";
 import { ViewCard } from "../../components/ViewCard";
-import LinearIndeterminate from "../../components/LoadingScreen";
+import LoadingScreen from "../../components/LoadingScreen";
 
 export default function Home() {
   const [loading, setLoading] = React.useState(true);
@@ -21,7 +21,7 @@ export default function Home() {
   }, []);
 
   return loading ? (
-    <LinearIndeterminate />
+    <LoadingScreen />
   ) : (
     <Container maxWidth="lg" sx={{ height: "100vh" }}>
       <Box mt={5}>
@@ -42,7 +42,9 @@ export default function Home() {
       </Box>
       <Box
         py={5}
-        sx={{ display: "flex", justifyContent: "center", width: "100%" }}
+        display={"flex"}
+        justifyContent={"center"}
+        sx={{ width: "100%" }}
       >
         <Board />
       </Box>
